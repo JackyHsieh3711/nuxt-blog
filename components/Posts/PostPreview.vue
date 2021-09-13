@@ -39,7 +39,9 @@ export default {
   },
   computed: {
     postLink() {
-      return this.isAdmin ? '/admin/' + this.id : '/posts/' + this.id
+      const link = this.isAdmin ? '/admin/' + this.id : '/posts/' + this.id
+      console.log('#link',link)
+      return link
     }
   }
 }
